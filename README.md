@@ -3,9 +3,9 @@ Etudiant : KOUVAHE folly Serge
 
 Classe : 1TM1
 
-__Description du projet : Mon projet a pour but :__
+__Description du projet :__
 
-
+ Mon projet a pour but :
 •	L’achat de vélo électrique en ligne grâce à une page web sur laquelle on peut choisir le vélo désiré.
 
 
@@ -16,7 +16,7 @@ __Description du projet : Mon projet a pour but :__
 
 
 
-__Aspects implémentés : __
+__Aspects implémentés :__
 
 
 Backend : Une base de données permettant d’enregistrer les nouveaux clients, les commandes.
@@ -37,7 +37,7 @@ frontend : Une page web (html, js, css) permettant d'appeler les webservices et 
 
 
 
-Détail api rest
+__Détail api rest:__
 
 
 
