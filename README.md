@@ -20,11 +20,29 @@ Aspects implémentés :
 
 
 Backend : Une base de données permettant d’enregistrer les nouveaux clients, les commandes.
+
+
 Backend :Un serveur web capable de fournir les pages html, js, css, ainsi que des webservices.
-frontend : Une page web (html, js, css) permettant d'appeler les webservices et de traiter les réponses, qui propose une interface utilisateur pour: -Commandes via le panier -connexion à son compte -création d’un compte client -La navigation entre les différentes pages du site (Accueil, Vélo, Administration, Contact...)
+
+
+frontend : Une page web (html, js, css) permettant d'appeler les webservices et de traiter les réponses, qui propose une interface utilisateur pour:
+
+-Commandes via le panier 
+
+-connexion à son compte 
+
+-création d’un compte client 
+
+-La navigation entre les différentes pages du site (Accueil, Vélo, Administration, Contact...)
+
+
 
 Détail api rest
 
+
+
 Détails de la DB(Diagramme, Tables et champs)
+
+
 
 Création des tables
