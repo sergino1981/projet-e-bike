@@ -48,8 +48,15 @@ frontend : Une page web (html, js, css) permettant d'appeler les webservices et 
 
 **Création des tables**
 /* Table facture enregistre les factures*/
+
+
 CREATE TABLE FACTURE(
-NumFacture INTEGER NOT NULL DEFAULT AUTOINCREMENT  PRIMARY KEY, //Identifiant de la table; autoincrémentée
+
+
+NumFacture INTEGER NOT NULL DEFAULT AUTOINCREMENT  PRIMARY KEY, //Identifiant de la table;
+autoincrémentée
+
+
 DateFacture DATE //Date d'émission de la facture
 )
 
@@ -58,7 +65,11 @@ DateFacture DATE //Date d'émission de la facture
 CREATE TABLE CLIENT(
 Idclient INTEGER NOT NULL DEFAULT  AUTOINCREMENT PRIMARY KEY, //Identifiant de la table; autoincrémentée
 NomClient CHAR(50)NOT NULL, //Nom du client
+
+
 PrenomClient CHAR(50)NOT NULL,//Prénom du client
+
+
 SexeClient DSexe, // Sexe du client
 AdresseClient CHAR(50)NOT NULL, //Adresse du client
 CodePostalClient INTEGER NOT NULL , //Code postal du client
