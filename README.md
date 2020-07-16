@@ -58,7 +58,16 @@ CREATE TABLE FACTURE(
 NumFacture INTEGER NOT NULL DEFAULT AUTOINCREMENT  PRIMARY KEY, //Identifiant de la table; autoincrémentée
 
 
-DateFacture DATE //Date d'émission de la facture
+DateFacture DATE, //Date d'émission de la facture
+
+Idclient INTEGER,
+
+
+FOREIGN  KEY (Idclient) REFERENCES  CLIENT
+
+
+                        ON  DELETE SET NULL  
+
 )
 
 /* table client: Enregistre les nouveaux clients*/
