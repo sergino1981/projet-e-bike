@@ -60,12 +60,10 @@ NumFacture INTEGER NOT NULL DEFAULT AUTOINCREMENT  PRIMARY KEY, //Identifiant de
 
 DateFacture DATE, //Date d'émission de la facture
 
-Idclient INTEGER,
+Idclient INTEGER, // Clée étrangère venant de la table Client
 
 
 FOREIGN  KEY (Idclient) REFERENCES  CLIENT
-
-
                         ON  DELETE SET NULL  
 
 )
@@ -165,7 +163,7 @@ quantite INTEGER, //Quantité achetée
 dateAchat DATE, //Date d'achat
 
 
-PRIMARY KEY (IdVelo,NumFacture),
+PRIMARY KEY (IdVelo,NumFacture), 
 
 
 FOREIGN KEY (IdVelo) REFERENCES  VELO (IdVelo),
