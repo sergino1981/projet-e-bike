@@ -35,7 +35,7 @@ frontend : Une page web (html, js, css) permettant d'appeler les webservices et 
 
 -création d’un compte client 
 
--La navigation entre les différentes pages du site (Accueil, Vélo, Administration, Contact...)
+-La navigation entre les différentes pages du site (Accueil, Vélo, Compte, Contact...)
 
 
 
