@@ -105,8 +105,6 @@ TelephoneClient INTEGER, //Téléphone du client
 DateNaissanceClient DATE, //Date naissance du client
 
 
-FOREIGN KEY (NumFacture) REFERENCES FACTURE(NumFacture) //Numéro facture associé à un client; clé étrangère dans cette table
-
 
 )
 
