@@ -86,10 +86,10 @@ SexeClient DSexe, // Sexe du client
 AdresseClient CHAR(50)NOT NULL, //Adresse du client
 
 
-CodePostalClient INTEGER NOT NULL , //Code postal du client
-
-
 VilleClient CHAR(30)NOT NULL, //Ville du client
+
+
+CodePostalClient INTEGER NOT NULL , //Code postal du client
 
 
 PaysClient CHAR(50) NOT NULL, //Pays du client
@@ -110,7 +110,6 @@ TelephoneClient INTEGER, //Téléphone du client
 
 
 DateNaissanceClient DATE, //Date naissance du client
-
 
 
 )
