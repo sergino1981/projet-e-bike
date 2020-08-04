@@ -14,7 +14,7 @@ Classe : 1TM1
 •	La connexion à son compte si on est déjà client ou la création d’un nouveau compte si ce n’est pas le cas ; tout cela via un formulaire
 
 
-•	Le panier d’achat  reprenant les détails de la commande (les ou le vélo et la quantité choisie.
+•	Une page qui génere la facture   reprenant les détails de la commande (les ou le vélo et la quantité choisie. 
 
 
 
@@ -29,7 +29,7 @@ Backend :Un serveur web capable de fournir les pages html, js, css, ainsi que de
 
 frontend : Une page web (html, js, css) permettant d'appeler les webservices et de traiter les réponses, qui propose une interface utilisateur pour:
 
--Commandes via le panier 
+-Ajouter l'article et la quantité via une page
 
 -connexion à son compte 
 
