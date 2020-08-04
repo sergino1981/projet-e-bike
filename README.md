@@ -46,7 +46,7 @@ frontend : Une page web (html, js, css) permettant d'appeler les webservices et 
 **Détails de la DB(Diagramme, Tables et champs)**
 
 
-<img src="frontend/img/diagramme">
+<img src="projet-e-bike/frontend/img/diagramme.png">
 
 **Création des tables**
 
