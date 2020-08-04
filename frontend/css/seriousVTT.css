@@ -1,0 +1,88 @@
+nav a{
+    text-decoration: blink;
+}
+header p{
+    width: 1500px;
+    height: 20px;
+    background-color: lightgreen;
+}
+body{
+    justify-content: space-between;
+}
+p{
+    text-align: center;
+}
+
+#titre {
+    font-size: 45px;
+    color: gold;
+    font-family: "Comic Sans MS", sans-serif;
+}
+
+#descriPrix{
+    font-size: 45px;
+    color: orangered;
+}
+
+#descriNom{
+    color: midnightblue;
+    font-size: 30px;
+    font-weight: bolder ;
+    font-family: "Comic Sans MS", sans-serif;
+}
+
+#containAll, #containAll1{
+    margin-right: auto;
+    margin-left: auto;
+    width: 80%;
+    height: auto;
+}
+
+#sec2 p{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#descriDescription p{
+    font-weight: normal;
+    font-size: large;
+    text-align: justify;
+}
+
+#descriCaracteristique p, #descriCaracteristique2 p{
+    text-align: justify;
+    font-weight: normal;
+}
+
+.contain1{
+    display: inline-block;
+}
+
+#imgSerious{
+float: left;
+    width: auto;
+    height: auto;
+    padding: 5px;
+}
+
+div #descriNomPrix{
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    height: auto;
+    padding: 12px;
+    clear: both;
+}
+
+#btn{
+    width: 100px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: bolder;
+    border: none;
+}
+
+#descriCaracteristique, #descriCaracteristique2{
+    margin: 5px;
+    padding: 10px;
+}

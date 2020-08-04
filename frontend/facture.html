@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Facture</title>
+    <link rel="stylesheet" href="css/facture.css">
+    <script src="js/facture.js">
+
+    </script>
+</head>
+<body onload="chargementNumFacture(), facture()">
+    <header>
+        <p id="titre">e Bike</p>
+        <p> </p>
+    </header>
+    <form name="form1" >
+        <div>
+            <p class="eltNumFact"> Numéro facture :</p> <input type="number" class="eltNumFact" id="loadNumber" name="loadNumber" required> <br>
+            <p class="eltDateFact"> Date facture : </p> <input  type="date" class="eltDateFact" id="dateFact" name="dateFact" required><br>
+
+            <p class="eltNumCmde"> Numéro de la commande </p> <input type="" class="eltNumCmde" id="numCommande" name="numCommande" required><br>
+            <p class="eltNumClt"> Numero du client </p> <input class="eltNumClt" name="numClt" required>
+
+            <br><br>
+        </div>
+    </form>
+    <form name="form2">
+        <div>
+        <table>
+            <thead>
+                <tr id="entete">
+                    <th> Description </th>
+                    <th> Quantité </th>
+                    <th>PU</th>
+                    <th> Prix HT</th>
+                    <th> TVA </th>
+                    <th> Total TTC </th>
+                </tr>
+            </thead>
+            <tbody id="corps" >
+                <tr>
+                    <td id="eltDescri"  ></td>
+                    <td id="eltQte"> </td>
+                    <td id="eltPU" ></td>
+                    <td id="eltPHT"></td>
+                    <td id="eltTVA" > </td>
+                    <td id="eltTTC"></td>
+
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr id="pied">
+                    <td colspan="6"> Le total de la facture s'élève à :</td><p id="prixT"></p>
+                </tr>
+            </tfoot>
+        </table>
+        <br><br>
+        <input type="button" Value="Recommencer le choix" onclick="window.location.href='page?url=velo'">
+        <input type="button" value="Payer" onclick="insertCommande(), insertFacture()">
+
+    </div>
+    </form> <br><br><br><br>
+
+    <footer>
+        <div>
+            Compte bancaire BE44 3333 5555 1111
+        </div>
+        <div>
+            Contacter le service client pour tous renseignements au (0032)455 45 45 45 ou (0032) 235 66 66 77
+        </div>
+    </footer>
+
+</body>
+</html>
