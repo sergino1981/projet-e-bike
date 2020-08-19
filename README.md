@@ -56,22 +56,40 @@ frontend : Une page web (html, js, css) permettant d'appeler les webservices et 
 **Détail api rest:**
 
 CREATE SERVICE "http_getChangePassword" TYPE 'JSON' AUTHORIZATION OFF USER "DBA" URL ON METHODS 'GET' AS call getChangePassword(:idClient,:password1,:password2);
+
+
 -- Permet la mise à jour du mot de passe  dans la table client
+
+
 -- Paramètre reçu pour la requête:idClient,:password1 (mot de passe),password2 (confirmation du mot de passe) 
+
+
 --Le réponse de la procédure renvoie un type JSON  --
 
 
 
 CREATE SERVICE "http_getConnexion" TYPE 'JSON' AUTHORIZATION OFF USER "DBA" URL ON METHODS 'GET' AS call getConnexion(:mail,:paswoord);
+
+
 -- Selectionne le mot de passe et le mail pour vérification
+
+
 -- Paramètre reçu pour la requête: mail,:paswoord
+
+
 --Le réponse de la procédure renvoie un type JSON  --
 
 
 
 CREATE SERVICE "http_getIdClient" TYPE 'RAW' AUTHORIZATION OFF USER "DBA" METHODS 'GET' AS call getIdClt(:nomClt,:prenomClt,:dateNaisClt,:mail);
+
+
 -- Permet un select dans la table client
+
+
 -- Paramètre reçu pour la requête: nomClt, prenomClt, dateNaisClt, mail
+
+
 --Le réponse de la procédure renvoie un type RAW  --
 
 
@@ -89,58 +107,118 @@ CREATE SERVICE "http_getInsertClient" TYPE 'RAW' AUTHORIZATION OFF USER "DBA" UR
 :confirmationMotPasse,
 :telephone,
 :dateNaissance);
+
+
 -- Permet l'insertion dans la table client
+
+
 -- Paramètre reçu pour la requête: :nom, prenom, sexe, adresse, ville, codePostal, pays, adresseLivraison, email, motPasse, confirmationMotPasse, telephone, dateNaissance
+
+
 --Le réponse de la procédure renvoie un type RAW  --
 
 
 
 CREATE SERVICE "http_getInsertCommande" TYPE 'RAW' AUTHORIZATION OFF USER "DBA" URL ON METHODS 'GET' AS call getInsertCommande(:veloId,:FactNum,:dateCmde,:qte);
+
+
 -- Permet l'insertion dans la table Commande
+
+
 -- Paramètre reçu pour la requête: veloId,FactNum,dateCmde,qte 
+
+
 --Le réponse de la procédure renvoie un type RAW  --
 
 CREATE SERVICE "http_getInsertFacture" TYPE 'RAW' AUTHORIZATION OFF USER "DBA" URL ON METHODS 'GET' AS call getInsertFacture(:factDate,:cltId);
+
+
 -- Insertion dans la table facture
+
+
 -- Paramètre reçu pour la requête: factDate (date facture) et cltId(id du client)
+
+
 -- Le réponse de la procédure renvoie un type RAW  --
 
 CREATE SERVICE "http_getLoadVTT_Serious" TYPE 'JSON' AUTHORIZATION OFF USER "DBA" URL ON METHODS 'GET' AS call getLoadVTT_Serious();
+
+
 -- Selectionne les champ de la table vélo pour l'affichage sur la page xeb
+
+
 -- Aucun paramètre reçu
+
+
 -- Le réponse de la procédure renvoie un type JSON  --
 
 CREATE SERVICE "http_getNom_Prix" TYPE 'JSON' AUTHORIZATION OFF USER "DBA" URL ON METHODS 'GET' AS call getNom_Prix(:refVelo);
+
+
 -- Renvoie le prix et le nom du velo
+
+
 -- Paramètre reçu pour la requête refVelo (idVelo)
+
+
 -- Le réponse de la procédure renvoie un type JSON  --
 
 
 CREATE SERVICE "http_getNumFacture" TYPE 'JSON' AUTHORIZATION OFF USER "DBA" URL ON METHODS 'GET' AS call getNumFacture();
+
+
 -- Selectionne la liste des numéros facture
+
+
 -- Aucun paramètre reçu
+
+
 -- Le réponse de la procédure renvoie un type JSON  --
 
 CREATE SERVICE "http_getStatistique" TYPE 'JSON' AUTHORIZATION OFF USER "DBA" URL ON METHODS 'GET' AS call getStatistique(:specificite,:date1,:date2);
+
+
 -- Renvoi la liste des vélos achetés par spécifitié
+
+
 -- Paramètre reçu pour la requête la spécificité(type), et la date d'intervalle de la recherche
+
+
 -- Le réponse de la procédure renvoie un type JSON  --
 
 CREATE SERVICE "http_getStock" TYPE 'JSON' AUTHORIZATION OFF USER "DBA" URL ON METHODS 'GET' AS call getStock(:prodId);
+
+
 -- Permet le select du stock de vélo pour voir s'il y a assez par rapport à la quantié qu'on veut acheter
+
+
 -- Paramètre reçu pour la requête: idVelo 
+
+
 -- Le réponse de la procédure renvoie un type JSON  --
 
 
 CREATE SERVICE "http_getTestEmail" TYPE 'JSON' AUTHORIZATION OFF USER "DBA" URL ON METHODS 'GET' AS call getTestEmail(:email);
+
+
 -- Permet le select  
+
+
 -- Paramètre reçu pour la requête: l'e mail 
+
+
 -- Le réponse de la procédure renvoie un type JSON  --
 
 
 CREATE SERVICE "http_getUpdateStock" TYPE 'JSON' AUTHORIZATION OFF USER "DBA" URL ON METHODS 'GET' AS call getUpdateStock(:refprod,:nvoStock);
+
+
 -- Permet de mettre à jour la quantité  restante dans la table vélo  --\
+
+
 -- Paramètre reçu pour la requête: veloId et Nouveau Sotck après calcul --\
+
+
 -- Le réponse de la procédure renvoie un type JSON  --
 
 
