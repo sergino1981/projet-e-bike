@@ -1,0 +1,55 @@
+
+label{
+    display: block;
+    width: 150px;
+    float: left;
+}
+
+input{
+    width: 250px;
+    margin: 5px;
+    padding: 5px;
+}
+
+fieldset{
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.btnV input{
+    margin-right: auto;
+    margin-left: auto;
+    width: 30%;
+}
+
+body{
+    color: black;
+    background-color: darkgray;
+    background-image: url("/img/imgForm.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    font-size: large;
+    background-position: center;
+    font-weight: bolder;
+}
+header p{
+    width: 1500px;
+    height: 20px;
+    background-color: lightgreen;
+}
+
+p{
+    text-align: center;
+}
+
+#titre {
+    font-size: 45px;
+    color: gold;
+    font-family: "Comic Sans MS", sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
