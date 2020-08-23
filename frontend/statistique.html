@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Statistique</title>
+    <link rel="stylesheet" href="css/statistique.css">
+    <script src="js/statistique.js"></script>
+</head>
+<body>
+    <header>
+        <p id="titre">e Bike</p>
+        <p> </p>
+    </header>
+    <img src="img/connexionHeader_ebikes.jpg">
+    <nav>
+        <a href="http://localhost/page?url=accueil">Retour à la page accueil</a>
+    </nav>
+
+    <p class="paragraphe">
+        <form name="formSpecificite" onsubmit="validate()" >
+            <fieldset>
+                <label>Choisissez la spécificité</label>
+                <select name="choixSpecificite" required>
+                    <option value="VTT">VTT</option>
+                    <option value="VTC">VTC</option>
+                    <option value="Vélos urbains">Vélos urbains</option>
+                    <option value="Vélos de trekking">Vélos de trekking  </option>
+                </select>
+                <p></p>
+                <label>Choisissez la date</label>
+                <input type="date" id="date1" required>
+                <input type="date" id="date2" required>
+                <input type="submit" class="paragraphe"  value=" Valider" >
+            </fieldset>
+        </form>
+    <form id=" tableau">
+        <fieldset id="table" hidden>
+        <table>
+            <thead>
+            <tr id="entete">
+                <th> Nombre </th>
+                <th> Nom </th>
+                <th>Prix</th>
+                <th> Date d'achat</th>
+            </tr>
+            </thead>
+            <tbody id="corps" >
+
+            </tbody>
+        </table>
+        </fieldset>
+    </form>
+    </p>
+
+</body>
+</html>
