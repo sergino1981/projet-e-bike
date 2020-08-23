@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ghost Hybride SquareVTC</title>
+    <link rel="stylesheet" href="css/seriousVTT.css">
+    <script src="js/Ghost_Hybride_SquareVTC.js"> </script>
+</head>
+<body onload="chargement()">
+<header>
+    <p id="titre"> e bike</p>
+    <p> Livraison gratuite  </p>
+</header>
+<nav>
+    <a href="http://localhost/page?url=accueil">Retour à la page accueil</a>
+</nav>
+<section id="sec1">
+    <div id="containAll">
+        <div  class="contain1" id="imgSerious">
+            <img src="img/Ghost_Hybride_SquareVTC.jpg">
+        </div>
+
+        <div class="contain1" id="descriNomPrix">
+            <img > <br>
+            <div id="descriNom">
+
+            </div>
+            <div id="descriPrix">
+
+            </div>
+            <form name="formulaireProd">
+                <p>Choisissez combien vous voulez</p>
+                <p> <input id="quantite" name="quantite" type="number" required="required" min="1" onblur="checkStock()"> </p>
+                <p>  <input id="btn" type="button" value="Ajouter" onclick="valider(), quantiteNotNull()">
+                </p>
+                <p> <input id="prodId"  type="hidden" value="1055714"></p>
+                <p><input id="nvoStock" hidden> </p>
+            </form>
+            <br> <br> <br>
+        </div>
+    </div>
+</section>
+<section id="sec2">
+    <p>Description</p>
+    <div id="descriDescription">
+
+    </div> <br> <br>
+    <p>Caracteristiques</p>
+    <div id="containAll1">
+        <div class="contain1" id="descriCaracteristique">
+
+        </div>
+        <div class="contain1" id="descriCaracteristique2">
+
+        </div>
+    </div>
+</section>
+</body>
+</html>
