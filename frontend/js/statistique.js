@@ -27,7 +27,7 @@ function affichage(data) {
             str += "<th>" + data[d].price +"</th>";
             str += "<th>" + data[d].buyDate+" </th>";
             str += "</tr>";
-            document.getElementById('corps').innerHTML = str;
+            document.getElementById('corps').innerHTML += str;
         }
         str +="</table>";
     }
