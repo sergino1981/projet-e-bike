@@ -213,10 +213,10 @@ CREATE SERVICE "http_getTestEmail" TYPE 'JSON' AUTHORIZATION OFF USER "DBA" URL 
 CREATE SERVICE "http_getUpdateStock" TYPE 'JSON' AUTHORIZATION OFF USER "DBA" URL ON METHODS 'GET' AS call getUpdateStock(:refprod,:nvoStock);
 
 
--- Permet de mettre à jour la quantité  restante dans la table vélo  --\
+-- Permet de mettre à jour la quantité  restante dans la table vélo  --
 
 
--- Paramètre reçu pour la requête: veloId et Nouveau Sotck après calcul --\
+-- Paramètre reçu pour la requête: veloId et Nouveau Sotck après calcul --
 
 
 -- Le réponse de la procédure renvoie un type JSON  --
